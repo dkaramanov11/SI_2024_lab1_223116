@@ -1,0 +1,63 @@
+4. mkdir SI_2024_lab1_223116
+   cd SI_2024_lab1_223116
+   git init
+
+5. git remote add origin https://github.com/dkaramanov11/SI_2024_lab1_223116.git
+
+6. nano README.md
+   git commit -m "Initial commit"
+
+7. git commit -m "Add starter code"
+
+8. git push --all origin master
+
+9. git branch -b bug1
+   git branch -b bug2
+
+10. git checkout bug1
+
+11. nano SILab1_1.java
+    git commit -m "Fix wrong condition in filterOddLengthStrings"
+
+12. git checkout bug2
+
+13. nano SILab1_2.java
+    git commit -m "а Fix wrong condition in makeBigStringFrom."
+
+14. git checkout bug1
+
+15. nano SILabMain.java
+    git commit -m "Call method filterOddLengthStrings in main class"
+
+16. git checkout bug1
+
+17. nano SILabMain.java
+    git commit -m "Call method makeBigStringFrom in main class"
+
+18. git push --all origin master
+
+19. git checkout master
+
+20. git merge bug1
+
+21. git push --all origin master
+
+22. git checkout bug2
+
+23. git rebase master
+    Решавање на конфликтот кој што се појавува
+
+24. git checkout master
+
+25. git merge bug2
+
+26. git push -u origin master
+    git push -u origin bug1
+
+27. git push --force origin bug2
+
+28. nano logs.txt
+    nano 223116.txt
+    git commit -m "Final commit"
+
+29. git push --all origin master
